@@ -35,9 +35,6 @@ export class PreguntaService {
 
   ];
 
-  getPreguntas1(): Pregunta[] {
-    return this.preguntas;
-  }
 
   getPreguntas(): Observable<Pregunta[]> {
     return of(this.preguntas);

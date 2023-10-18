@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AsignaturaComponent } from './asignatura/asignatura.component';
 import { PreguntaComponent } from './pregunta/pregunta.component';
-import { RouterModule, Routes } from '@angular/router';
 
 
 
@@ -15,7 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
     AppComponent,
     HeaderComponent,
     AsignaturaComponent,
-    PreguntaComponent
+    PreguntaComponent,
   ],
   imports: [
     BrowserModule,
