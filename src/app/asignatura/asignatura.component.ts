@@ -12,8 +12,12 @@ export class AsignaturaComponent implements OnInit {
 
   constructor(private asignaturasService: AsignaturaService) {}
 
+ 
+
   ngOnInit(): void {
-    this.asignaturas = this.asignaturasService.getAsignaturas();
+    this.asignaturasService.getAsignaturas().subscribe(data => {
+      this.asignaturas = data;
+    });
   }
 }
 

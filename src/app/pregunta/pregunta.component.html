@@ -1,1 +1,16 @@
-<p>pregunta works!</p>
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let pregunta of preguntas">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{pregunta.pregunta}}</h5>
+            <p class="card-text">{{pregunta.respuesta}}</p>
+            <p class="card-text">{{pregunta.respuestas}}</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  

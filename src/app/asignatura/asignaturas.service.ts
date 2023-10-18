@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Asignatura } from './asignatura.interface'; // Importa la interfaz
+import { Asignatura } from './asignatura.interface';
+import { Observable, of } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,7 @@ export class AsignaturaService {
     { nombre: 'Ingles', siglas: 'ING', profesor: 'Don Pablo' },
   ];
 
-  getAsignaturas(): Asignatura[] {
-    return this.asignaturas;
+  getAsignaturas(): Observable<Asignatura[]> {
+    return of(this.asignaturas);
   }
 }
